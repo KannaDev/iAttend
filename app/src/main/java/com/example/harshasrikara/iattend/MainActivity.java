@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     String username[] = new String[size];
     String password[] = new String[size];
 
-
     
     boolean valid = false;
 
