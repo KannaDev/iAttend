@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     boolean valid = false;
 
+    String adm = "admin";
+    String admPass = "adminpass";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         username[0] = "abc123456";
         password[0] = "Password1";
-
-
 
     }
 
@@ -52,6 +53,16 @@ public class MainActivity extends AppCompatActivity {
 //                    startActivity(intent);
                 }
             }
+        }
+        if(user.getText().toString().equals(adm))
+        {
+            if (pass.getText().toString().equals(admPass))
+            {
+                valid = true;
+//              Intent intent = new Intent(getApplicationContext(),adminActivity.class);
+//              startActivity(intent);
+            }
+
         }
         if(!valid)
         {
